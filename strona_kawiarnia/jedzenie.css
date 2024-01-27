@@ -1,0 +1,228 @@
+@font-face{
+     font-family: CzcionkaDekoracyjna;
+     src:url(fonts/Playball-Regular.ttf)
+}
+  
+@font-face {
+     font-family: CzcionkaDoTekstow;
+     src: url(fonts/Forum-Regular.ttf);
+}
+  
+body{
+   position: relative;
+   background-color:rgba(169, 116, 73, 0.973);
+   /* font-family: 'IM Fell DW Pica'; */
+   font-family: CzcionkaDekoracyjna;
+   font-size: 30px;
+   height: 100%;
+   /* padding-bottom: 6.74rem; */
+   /*padding: 0;
+   margin: 0;*/
+   padding: 0px !important;
+   margin: 0px !important;
+}
+
+.footer{
+   position: fixed;
+   height: 50px;
+   width: 100%;
+   bottom: 0;
+   font-family: CzcionkaDoTekstow;
+   font-size: 20px;
+   text-align: center;
+   background-color: rgb(0, 0, 0, 0.8);
+   color: white;
+   padding-bottom: 15px;
+}
+
+.dane_autora{
+   position: relative;
+   top: 50%;
+}
+
+.naglowek{
+   z-index: 1;
+   /*position: absolute;*/
+   background-color: white;
+   width: 100%;
+   height: 110px;
+   box-shadow: 2px 2px 2px #000000;
+   margin-right: 0;
+}
+  
+.naglowek a {
+   font-size: 25px;
+   padding: 0px;
+   color: #000000;
+   /* margin:2px; */
+   text-decoration: none;
+   margin: 0 10px; 
+}
+  
+.naglowek a:hover {
+   color: rgba(169, 116, 73, 0.973);
+}
+
+.nawigacja{
+   position: relative;
+   bottom: 20%;
+}
+
+.logo{
+   position: relative; 
+   left: 20px;
+   float: left;
+   width: 200px;
+   height: 100px;
+   background-image: url(images/logo.png);
+}
+
+.podstrona_naglowek { 
+   position: relative;
+   top: 80px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 70px;
+   color: rgb(0, 0, 0);
+   padding-left: 15px;
+   width: 1469px;
+}
+  
+.tlo_menu {
+   position: relative;
+   top: 150px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1469px;
+   height: 2340px;
+   background-color: white;
+   margin-bottom: 50%;
+}
+
+ .wuzetka{
+     position: absolute;
+     top: 20px;
+     /* left: 80px;*/
+     left: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/wuzetka.jpg);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+  .wuzetka_opis{
+     position: absolute;
+     /* float: left; */
+     top: 470px;
+     /*left: 80px;*/
+     left: 5%;
+     width: 600px;
+     height: 250px;
+     background-color: rgb(254, 240, 205);
+  }
+  .kanapka_rzemieslnicza{
+     position: absolute;
+     /*float: right; */
+     top: 20px;
+     right: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/kanapka_rzemieslnicza.png);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+  .kanapka_rzemieslnicza_opis{
+     position: absolute;
+     /*float: right;*/
+     top: 470px;
+     right: 5%;
+     width: 600px;
+     height: 250px;
+     background-color: rgb(254, 240, 205);
+  }
+  .bagietka_firmowa{
+     position: absolute;
+     top: 820px;
+     left: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/bagietka_firmowa.png);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+  .bagietka_firmowa_opis{
+     position: absolute;
+     top: 1270px;
+     left: 5%;
+     width: 600px;
+     height: 250px;
+     background-color: rgb(254, 240, 205);
+  }
+  .bagietka_wyborna{
+     position: absolute;
+     top: 820px;
+     right: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/bagietka_wyborna.png);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+  .bagietka_wyborna_opis{
+    position: absolute;
+    top: 1270px;
+    right: 5%;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(254, 240, 205);
+  }
+ 
+  .szarlotka{
+     position: absolute;
+     top: 1620px;
+     left: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/szarlotka.jpg);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+   
+  .szarlotka_opis{
+     position: absolute;
+     top: 2070px;
+     left: 5%;
+     width: 600px;
+     height: 250px;
+     background-color: rgb(254, 240, 205);
+  }
+  .sernik_baskijski{
+     position: absolute;
+     top: 1620px;
+     right: 5%;
+     width: 600px;
+     height: 450px;
+     background-image: url(images/sernik_baskijski.png);
+     filter: brightness(1);
+     transition: all 0.4s;
+  }
+  .sernik_baskijski_opis{
+    position: absolute;
+    top: 2070px;
+    right: 5%;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(254, 240, 205);
+  }
+ 
+  .wuzetka:hover, .kanapka_rzemieslnicza:hover, .bagietka_firmowa:hover, .bagietka_wyborna:hover, .szarlotka:hover, .sernik_baskijski:hover{
+    filter: brightness(0.5);
+ }
+ 
+
+ .informacje{
+     padding-left: 15px;
+     font-family: CzcionkaDoTekstow;
+  }
+  
+ 
