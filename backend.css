@@ -1,0 +1,69 @@
+@font-face{
+     font-family: CzcionkaDekoracyjna;
+     src:url(fonts/Playball-Regular.ttf)
+}
+
+@font-face {
+   font-family: CzcionkaDoTekstow;
+   src: url(fonts/Forum-Regular.ttf);
+}
+
+body{
+   position: relative;
+   background-color:rgba(169, 116, 73, 0.973);
+   font-family: CzcionkaDekoracyjna;
+   font-size: 30px;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}  
+
+.backend_informacje{
+     font-family: CzcionkaDoTekstow;
+     width: 800px;
+     height: 100px;
+     background-color: rgb(254, 240, 205);
+     padding-left: 5px;
+     border-radius: 25px;
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+}  
+
+.backend_przyciski{
+     font-family: CzcionkaDoTekstow;
+     background-color: rgb(254, 240, 205);
+     width: 300px;
+     height: 65px;
+     padding-left: 5px; 
+     border-radius: 15px;
+     text-align: center;
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+a{
+     text-decoration: none;
+}
+
+/*
+.backend_przyciski a{
+     text-decoration: none;
+}
+
+.edycja_menu {
+     text-decoration: none;
+}
+
+.edycja_uzytkownika{
+    left: 50%; 
+}
+
+.wyloguj{
+    left: 80%; 
+}*/
+  

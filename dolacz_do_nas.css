@@ -2,12 +2,12 @@
      font-family: CzcionkaDekoracyjna;
      src:url(fonts/Playball-Regular.ttf)
 }
-
-@font-face {
-   font-family: CzcionkaDoTekstow;
-   src: url(fonts/Forum-Regular.ttf);
+  
+ @font-face {
+    font-family: CzcionkaDoTekstow;
+    src: url(fonts/Forum-Regular.ttf);
 }
-
+  
 body{
     position: relative;
     background-color:rgba(169, 116, 73, 0.973);
@@ -17,7 +17,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
-
+  
 .footer{
    position: fixed;
    height: 50px;
@@ -27,24 +27,23 @@ body{
    font-size: 20px;
    text-align: center;
    background-color: rgb(0, 0, 0, 0.8);
-   color: rgb(255, 255, 255);
+   color: white;
    padding-bottom: 15px;
 }
-
-.dane_autora{
-   position: relative;
-   top: 50%;
-}
   
+.dane_autora{
+    position: relative;
+    top: 50%;
+}
+
 .naglowek{
     z-index: 1;
-    background-color: rgb(255, 255, 255);
+    /*position: absolute;*/
+    background-color: white;
     width: 100%;
     height: 110px;
     box-shadow: 2px 2px 2px #000000;
     margin-right: 0;
-    align-items: center;
-    justify-content: space-between;
 }
   
 .naglowek a {
@@ -54,11 +53,10 @@ body{
      text-decoration: none;
      margin: 0 10px; 
 }
- 
- .naglowek a:hover {
-   color: rgba(169, 116, 73, 0.973);
- }
-
+  
+.naglowek a:hover {
+     color: rgba(169, 116, 73, 0.973);
+}
 .nawigacja{
      position: relative;
      bottom: 10%;
@@ -70,7 +68,6 @@ body{
      margin-right: 5%;
 }
 
-  
 .logo{
      position: relative; 
      left: 20px;
@@ -80,56 +77,69 @@ body{
      background-image: url(images/logo.png);
 }
 
-.podstrona_naglowek{
-     position: relative;
+.napis_informacje_dolacz_do_nas{
      top: 80px;
      margin-left: auto;
-     margin-right: auto;
-     font-size: 70px;
-     color: rgb(0, 0, 0);
-     padding-left: 15px;
-     width: 1469px;
-}  
+     margin-right: auto; 
+     width: 800px;
+     font-size: 55px;
+     word-spacing: 15px;
+}
 
-.ogloszenia{
-     background-color: rgb(254, 240, 205);
-     margin-top: 150px;
-     margin-left: auto;
-     margin-right: auto;
-     width: 1469px;
-     font-family: CzcionkaDoTekstow;
-     padding-bottom:0;
+.link_do_ofert_pracy{
      position: relative;
-     box-shadow: 2px 2px 2px #000000;
-     padding-right: 20px;
+     text-align: center;
+     font-size: 30px;
+}
+ 
+.link_do_ofert_pracy a{
+     text-decoration: none;
+     color: rgb(0, 0, 0)
 }
 
-.ogloszenie1{
- margin-top: 150px;
+.link_do_ofert_pracy a:hover {
+     color: rgba(169, 116, 73, 0.973);
 }
 
-.ogloszenie2{
-   /* top: 700px; */
-   margin-top: 50px;
-}
-
-.ogloszenie3{
-   /* top: 1100px; */
-   margin-top: 50px;
+.wszystkie_informacje_dolacz_do_nas{
+   background-color: rgb(254, 240, 205);
+   font-size: 20px;
+   top: 150px;
+   margin-left: auto;
+   margin-right: auto; 
+   width: 800px;
+   height: 2950px;
    margin-bottom: 10%;
+   box-shadow: 2px 2px 2px #000000;
 }
 
+.zdjecie_dolacz_do_nas{
+     position: relative;
+     align-items: center;
+     margin-left: auto;
+     margin-right: auto; 
+}
+
+.informacje_zawartosc{
+     margin-top: 5px;
+     margin-left: auto;
+     margin-right: auto; 
+     width: 680px;
+}
+  
 .informacje{
      padding-left: 15px;
      font-family: CzcionkaDoTekstow;
-     padding-top: 5px;
-     padding-right: 15px;
 }
-
-.daty_dodania{
-   position: absolute;
-   top: 0;
-   right: 0;
-   margin: 10px; 
+  
+.tabela{
+     padding-left: 15px;
+     font-family: CzcionkaDoTekstow;
 }
+   
+.lista_zawodow{
+     font-family: CzcionkaDoTekstow;
+}
+  
+  
   

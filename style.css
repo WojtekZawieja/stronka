@@ -1,449 +1,310 @@
-html{
-   height: 100%;  
-}
-
 @font-face{
-   font-family: CzcionkaDekoracyjna;
-   src:url(fonts/Playball-Regular.ttf)
+     font-family: CzcionkaDekoracyjna;
+     src:url(fonts/Playball-Regular.ttf)
 }
-
+  
 @font-face {
-   font-family: CzcionkaDoTekstow;
-   src: url(fonts/Forum-Regular.ttf);
+     font-family: CzcionkaDoTekstow;
+     src: url(fonts/Forum-Regular.ttf);
 }
-
+  
 body{
-    position: relative;
-    background-color:rgba(169, 116, 73, 0.973);
-    /* font-family: 'IM Fell DW Pica'; */
-    font-family: CzcionkaDekoracyjna;
-    font-size: 30px;
-    height: 100%;
-    padding-bottom: 6.74rem;
-    /*padding: 0;
-    margin: 0;*/
-    padding: 0px !important;
-    margin: 0px !important;
+     position: relative;
+     background-color:rgba(169, 116, 73, 0.973);
+     font-family: CzcionkaDekoracyjna;
+     font-size: 30px;
+     height: 100%;
+     padding: 0px !important;
+     margin: 0px !important;
 }
-
+  
 .footer{
-     /* position: relative;  */
-    position: fixed;
-    height: 80px;
-    width: 100%;
-    bottom: 0;
-    font-family: CzcionkaDoTekstow;
-    font-size: 15px;
-    text-align: center;
-    background-color: rgb(0, 0, 0, 0.8);
-    color: white;
-    /* padding: 1rem; */
-    /* clear: both; */
-
+     position: fixed;
+     height: 50px;
+     width: 100%;
+     bottom: 0;
+     font-family: CzcionkaDoTekstow;
+     font-size: 20px;
+     text-align: center;
+     background-color: rgb(0, 0, 0, 0.8);
+     color: rgb(255, 255, 255);
+     padding-bottom: 15px;
 }
 
- #dane_autora{
-    position: relative;
-    top: 60px;
+.dane_autora{
+     position: relative;
+     top: 50%;
+}
+
+.naglowek{
+     z-index: 1;
+     background-color: rgb(255, 255, 255);
+     width: 100%;
+     height: 110px;
+     box-shadow: 2px 2px 2px #000000;
+     margin-right: 0;
  }
-
-#naglowek{
-    position: fixed;
-    z-index: 1;
-    /*position: absolute;*/
-    background-color: white;
-    width: 100%;
-    height: 110px;
-    box-shadow: 2px 2px 2px #000000;
+  
+.naglowek a {
+     font-size: 25px;
+     padding: 0px;
+     color: #000000;
+     text-decoration: none;
+     margin: 0 10px; 
+}
+  
+.naglowek a:hover {
+     color: rgba(169, 116, 73, 0.973);
 }
 
-#logo{
-    position: relative; 
-    left: 20px;
-    float: left;
-    width: 200px;
-    height: 109px;
-    background-image: url(images/logo.png);
+.nawigacja{
+     position: relative;
+     bottom: 10%;
+     overflow: hidden;
 }
 
-#menu{
-    position: relative;
-    top: 25px; 
-    left: 50px;
-    float: left;
+.nawigacja a:last-child {
+     float: right;
+     margin-right: 5%;
 }
 
-#o_nas{
-    position: relative;
-    top: 25px; 
-    left: 90px;
-    float: left;
- }
-
- #dolacz{
-    position: relative;
-    top: 25px; 
-    left: 130px;
-    float: left;
+.logo{
+     position: relative; 
+     left: 20px;
+     float: left;
+     width: 200px;
+     height: 100px;
+     background-image: url(images/logo.png);
 }
 
-#kontakt{
-    position: relative;
-    top: 25px; 
-    left: 170px;
-    float: left;
+.kontener1{
+     position: relative;
+     width: 100%; 
+     text-align: center;
+     top: 100px;
 }
 
-#ogloszenia{
+.kontener1 a{
+     text-decoration: none;
+}
+
+.obrazek_link_do_kaw{
    position: relative;
-   top: 25px; 
-   left: 210px;
-   float: left;
-}
-
-#logowanie{
-    position: relative;
-    top: 25px; 
-    left: 250px;
-    float: left;
-}
-
-#znajdz_kawiarnie{
-    position: relative;
-    top: 25px; 
-    left: 40%;
-    float: left;
- }
-
- .naglowki{
-    padding: 0;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
- }
-
- .naglowki:after{
-    content: "";
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
- }
-
- .naglowki:hover:after{
-    width: 100%;
- }
-
- #zdjecie_startowe{
-    position: relative;
-    top: 110px;
-    float: left;
-    width: 100%;
-    height: 350px;
-    background-image: url(images/zdj_startowe.jpg);
-}
-
-#zdjecie_opis{
-   font-family: CzcionkaDoTekstow;
-    position: absolute; 
-    top: 490px;
-    left: 90px;
-    float: inherit;
-    width: 1332px;
-    height: 250px;
-    background-image: url(images/zdj_opis.jpg);
-    color: white;
-}
-
-#paragraf_1{
-    position: relative; 
-    font-size: 45px;
-    margin: 5px;
-    padding: 15px;
-}
-
-#paragraf_2{
-    position: relative; 
-    font-size: 35px;
-    margin: 5px;
-    padding: 15px;
-}
-
-.obrazki_linki{
-   position: absolute;
-   top: 800px; 
+   float: none;
    width: 444px;
    height: 396px;
    display: flex;
    justify-content: center;
    font-size: 40px;
-   color: white;
+   color: rgb(255, 255, 255);
    background-size: cover;
    filter: brightness(1);
-   transition: all 0.4s;
-   margin: 20px;
-}
-
-.obrazek_link_do_kaw{
-   /* left: 90px; */
-   /* left: 10%; */
-   /* background-image: url(images/zdj_kawa.png); */
-   left: 3%;
-   top: 850px;
    background-image: url(images/zdj_kawa.png);
-   flex: 1; 
+   transition: all 0.4s;
 }
 
 .obrazek_link_do_jedzenia{
-   /* left: 534px; */
-   /* left: 40%; */
-   /* background-image: url(images/zdj_jedzenie.jpg); */
-   left: 50vw; 
-   transform: translateX(-50%); 
-   top: 850px;
+   position: relative;
+   float: none;
+   width: 444px;
+   height: 396px;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   background-size: cover;
+   filter: brightness(1);
    background-image: url(images/zdj_jedzenie.jpg);
-   flex: 1; 
-   margin: 0 auto;
+   transition: all 0.4s;
 }
 
 .obrazek_link_do_napojow{
-   /* left: 978px; */
-   /* left: 70%; */
-   /* background-image: url(images/zdj_napoje.jpg); */
-   top: 850px;
+   position: relative;
+   float: none;
+   width: 444px;
+   height: 396px;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   background-size: cover;
+   filter: brightness(1);
    background-image: url(images/zdj_napoje.jpg);
-   right: 3%; 
-   flex: 1; 
+   transition: all 0.4s;
 }
+
 
 .obrazek_link_do_kaw:hover, .obrazek_link_do_jedzenia:hover, .obrazek_link_do_napojow:hover, .obrazek_link_do_kaw_podstrona_menu:hover, .obrazek_link_do_jedzenia_podstrona_menu:hover, .obrazek_link_do_napojow_podstrona_menu:hover{
     font-size: 60px;
     filter: brightness(0.5);
 }
 
-
-#sociale{
-    position: absolute;
-    background-color: rgb(85, 6, 6);
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    top: 2660px;
-    width: 100%;
-    height: 150px;
-    /*display: flex;
-    justify-content: center;*/
+.divy1{
+     display: inline-block; 
+     vertical-align: top; 
+     margin: 0 10px; 
+     width: calc((100% - 40px) / 3); 
+     max-width: 444px;
+     height: 396px; 
+     font-size: 40px;
+     color: rgb(255, 255, 255);
+     background-size: cover;
+     filter: brightness(1);
+     transition: all 0.4s;
+ }
+ .divy1:hover {
+     font-size: 48px;
+     filter: brightness(0.5);
+ } 
+ 
+.kontener2{
+   position: relative;
+   width: 100%; 
+   text-align: center;
+   top: 850px;
 }
 
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-    /*border: solid red;*/
+.kontener2 a{
+     text-decoration: none;
+}
+
+.znajdz_kawiarnie_na_glownej{
+   position: relative;
+   float: none;
+   width: 444px;
+   height: 396px;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   background-size: cover;
+   filter: brightness(1);
+   background-image: url(images/znajdz_kawiarnie_na_glownej.jpg);
+   transition: all 0.4s;
+}
+
+.dolacz_do_nas_na_glownej{
+   position: relative;
+   float: none;
+   width: 444px;
+   height: 396px;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   background-size: cover;
+   filter: brightness(1);
+   background-image: url(images/dolacz_do_nas_na_glownej.jpg);
+   transition: all 0.4s;
+}
+
+.kontakt_na_glownej{
+   position: relative;
+   float: none;
+   width: 444px;
+   height: 396px;
+   display: flex;
+   justify-content: center;
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   background-size: cover;
+   filter: brightness(1);
+   background-image: url(images/kontakt_na_glownej.jpg);
+   transition: all 0.4s;
+}
+
+.znajdz_kawiarnie_na_glownej:hover, .dolacz_do_nas_na_glownej:hover, .kontakt_na_glownej:hover{
+   font-size: 48px;
+   filter: brightness(0.5);
 }
   
-  .fa-facebook{
-    background: rgb(85, 6, 6);
-    color: white;
+.divy2 {
+     display: inline-block; 
+     vertical-align: top; 
+     margin: 0 10px; 
+     width: calc((100% - 40px) / 3); 
+     max-width: 444px;
+     height: 396px; 
+     font-size: 40px;
+     color: rgb(255, 255, 255);
+     background-size: cover;
+     filter: brightness(1);
+     transition: all 0.4s;
+ }
+ .divy2:hover {
+     font-size: 48px;
+     filter: brightness(0.5);
+ } 
+
+.zdjecie_startowe{
+     position: relative;
+     top: 0;
+     float: left;
+     width: 100%;
+     height: 350px;
+     background-image: url(images/zdj_startowe.jpg);
 }
-  
-.fa-twitter{
-    background: rgb(85, 6, 6);
-    color: white;
-}
-  
-.fa-instagram{
-    background: rgb(85, 6, 6);
-    color: white;
- }
-  
-.fa-youtube{
-    background: rgb(85, 6, 6);
-    color: white;
- }
 
- #pozycja_w_menu{
-    position: absolute; 
-    top: 150px;
-    left: 90px;
-    font-size: 55px;
-    color: rgb(0, 0, 0);
- }
-
- #tlo_menu{
-    position: relative;
-    top: 250px;
-    left: 50px;
-    width: 1469px;
-    height: 2340px;
-    background-color: white;
- }
-
-#sok_pomaranczowy{
-    position: absolute;
-    top: 20px;
-    /* left: 80px;*/
-    left: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/sok_pomaranczowy.jpg);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
- #sok_pomaranczowy_opis{
-    position: absolute;
-    /* float: left; */
-    top: 470px;
-    /*left: 80px;*/
-    left: 5%;
-    width: 600px;
-    height: 250px;
-    background-color: rgb(254, 240, 205);
- }
- #sok_grapefruitowy{
-    position: absolute;
-    /*float: right; */
-    top: 20px;
-    right: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/sok_grapefruitowy.jpg);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
- #sok_grapefruitowy_opis{
-    position: absolute;
-    /*float: right;*/
-    top: 470px;
-    right: 5%;
-    width: 600px;
-    height: 250px;
-    background-color: rgb(254, 240, 205);
- }
- #lemoniada{
-    position: absolute;
-    top: 820px;
-    left: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/lemoniada.png);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
- #lemoniada_opis{
-    position: absolute;
-    top: 1270px;
-    left: 5%;
-    width: 600px;
-    height: 250px;
-    background-color: rgb(254, 240, 205);
- }
- #musujacy_spritzer{
-    position: absolute;
-    top: 820px;
-    right: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/musujacy_spritzer.png);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
- #musujacy_spritzer_opis{
-   position: absolute;
-   top: 1270px;
-   right: 5%;
-   width: 600px;
+.zdjecie_opis{
+   font-family: CzcionkaDoTekstow;
+   margin-top: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   left: 90px;
+   width: 1332px;
    height: 250px;
-   background-color: rgb(254, 240, 205);
- }
- #herbata_mrozona_z_granatem{
-    position: absolute;
-    top: 1620px;
-    left: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/herbata_mrozona_z_granatem.png);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
-  
- #herbata_mrozona_z_granatem_opis{
-    position: absolute;
-    top: 2070px;
-    left: 5%;
-    width: 600px;
-    height: 250px;
-    background-color: rgb(254, 240, 205);
- }
- #smoothie_mango_banana{
-    position: absolute;
-    top: 1620px;
-    right: 5%;
-    width: 600px;
-    height: 450px;
-    background-image: url(images/smoothie_mango_banan.jpg);
-    filter: brightness(1);
-    transition: all 0.4s;
- }
- #smoothie_mango_banana_opis{
-   position: absolute;
-   top: 2070px;
-   right: 5%;
-   width: 600px;
-   height: 250px;
-   background-color: rgb(254, 240, 205);
- }
-
- #sok_pomaranczowy:hover, #sok_grapefruitowy:hover, #lemoniada:hover, #musujacy_spritzer:hover, #herbata_mrozona_z_granatem:hover, #smoothie_mango_banana:hover{
-  filter: brightness(0.5);
+   background-image: url(images/zdj_opis.jpg);
+   color: rgb(255, 255, 255);
+   box-shadow: 2px 2px 2px #000000;
 }
 
-
-#informacje_o_nas_na_glownej{
-    position: absolute;
-    top: 1400px;
-    left: 756px;
-    /*width: 666px;
-    height: 450px;
-    background-image: url(images/kawa_zdj_glowna.jpg);*/
+.paragraf_1{
+    position: relative; 
+    font-size: 45px;
+    margin: 5px;
+    padding: 15px;
 }
 
-#informacje_o_nas_na_glownej_opis{
-    position: absolute;
-    top: 1400px;
-    left: 90px;
-    width: 666px;
-    height: 480px;
-    /*background-image: url(images/kawa_zdj_opis.jpg);
-    filter: brightness(0.15);*/
+.paragraf_2{
+    position: relative; 
+    font-size: 35px;
+    margin: 5px;
+    padding: 15px;
 }
 
-#paragraf1_informacje{
+.informacje_o_nas_na_glownej{
+     position: absolute; 
+     top: 1400px;
+     right: 5%; 
+     flex: 1;
+}
+
+.informacje_o_nas_na_glownej_opis{
+     position: absolute;
+     top: 1400px;
+     left: 5%; 
+     width: 666px;
+     height: 480px;
+     flex: 1;
+}
+
+.paragraf1_informacje{
     color: rgb(0, 0, 0);
     font-size: 35px;
 }
 
-#paragraf2_informacje{
+.paragraf2_informacje{
     font-family: CzcionkaDoTekstow;
     color: rgb(0, 0, 0);
     font-size: 25px;
 }
 
-#paragraf3_informacje{
-    display: inline-block;
+.paragraf3_informacje{
+    /* display: inline-block; */
     position: relative;
 }
   
-#paragraf3_informacje:after {
+.paragraf3_informacje:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -455,363 +316,52 @@ body{
     transition: transform 0.25s ease-out;
 }
   
-#paragraf3_informacje:hover:after {
+.paragraf3_informacje:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-#znajdz_kawiarnie_na_glownej {
-   position: absolute;
-   /*float: left;*/
-   top: 2100px;
-   left: 90px;
-   width: 444px;
-   height: 396px;
-   display: flex;
-   justify-content: center;
-   font-size: 40px;
-   color: white;
-   background-size: cover;
-   filter: brightness(1);
-   background-image: url(images/znajdz_kawiarnie_na_glownej.jpg);
-   transition: all 0.4s;
+ 
+.sociale{
+     background-color: rgb(85, 6, 6);
+     color: rgb(255, 255, 255);
+     font-size: 25px;
+     text-align: center;
+     width: 1332px;
+     height: 200px; 
+     margin-top: 950px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 10%;
+     box-shadow: 2px 2px 2px #000000;
+} 
+.social-list {
+     list-style-type: none;
+     padding: 0;
 }
 
-#dolacz_do_nas_na_glownej{
-   position: absolute;
-   float: right;
-   top: 2100px;
-   left: 534px;
-   width: 444px;
-   height: 396px;
-   display: flex;
-   justify-content: center;
-   font-size: 40px;
-   color: white;
-   background-size: cover;
-   filter: brightness(1);
-   background-image: url(images/dolacz_do_nas_na_glownej.jpg);
-   transition: all 0.4s;
+.social-list li {
+     margin-bottom: 10px;
 }
 
-#kontakt_na_glownej{
-   position: absolute;
-   float: left;
-   top: 2100px;
-   left: 978px;
-   width: 444px;
-   height: 396px;
-   display: flex;
-   justify-content: center;
-   font-size: 40px;
-   color: white;
-   background-size: cover;
-   filter: brightness(1);
-   background-image: url(images/kontakt_na_glownej.jpg);
-   transition: all 0.4s;
-}
-
-#znajdz_kawiarnie_na_glownej:hover, #dolacz_do_nas_na_glownej:hover, #kontakt_na_glownej:hover{
-   font-size: 48px;
-   filter: brightness(0.5);
-}
-
-#logo_informacje{
-   position: fixed;
-   top: 480px;
-   left: 550px;
-   width: 200px;
-   height: 100px;
-}
-
-#napis_informacje{
-   position: fixed;
-   top: 500px;
-   left: 125px;
-   font-size: 35px;
-}
-
-#wszystkie_informacje_o_nas{
-   position: absolute;
-   background-color: rgb(254, 240, 205);
-   font-size: 20px;
-   top: 110px;
-   left: 50%;
-   width: 50%;
-   height: 2340px;
-}
-
-#zdjecie_stara_kawiarnia{
-   position: inherit;
-   top: 15px;
-   left: 15px;
-}
-
-.informacje{
-   padding-left: 15px;
-   font-family: CzcionkaDoTekstow;
-}
-
-#informacje_zawartosc{
-   position: absolute;
-   left: 15px;
-   top: 440px;
-   width: 680px;
-}
-
-#napis_informacje_dolacz_do_nas{
-   position: fixed;
-   top: 400px;
-   left: 125px;
-   font-size: 35px;
-}
-
-#link_do_ofert_pracy{
-   display: inline-block;
-   position: relative;
+.social-list a {
+     font-family: CzcionkaDoTekstow;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     font-size: 20px;
+     display: block;
+     transition: all 0.4s;
 }
  
-#link_do_ofert_pracy:after {
-   content: '';
-   position: absolute;
-   width: 100%;
-   transform: scaleX(0);
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   transform-origin: bottom right;
-   transition: transform 0.25s ease-out;
+.social-list a:hover {
+    color: rgba(169, 116, 73, 0.973);
 }
  
-#link_do_ofert_pracy:hover:after {
-   transform: scaleX(1);
-   transform-origin: bottom left;
+.link_do_informacji{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
 }
-
-#wszystkie_informacje_dolacz_do_nas{
-   position: absolute;
-   background-color: rgb(254, 240, 205);
-   font-size: 20px;
-   top: 110px;
-   left: 50%;
-   width: 50%;
-   height: 2760px;
+ 
+.link_do_informacji:hover{
+     color: rgb(254, 240, 205);
+     transition: all 0.4s;
 }
-
-#zdjecie_dolacz_do_nas{
-   position: inherit;
-   top: 15px;
-   left: 15px;
-}
-
-/* #lista_benefity{ */
-   /* list-style-type: circle; */
-   /* line-height: 2.5; */
-/* } */
-
-#lista_zawodow{
-   font-family: CzcionkaDoTekstow;
-}
-
-
-
-#panel_logowania{
-   background-color: white;
-   font-family: CzcionkaDoTekstow;
-   position: absolute;
-   
-   top: 200px;
-   left: 440px; 
-   width: 35%;
-   height: 400px;
-   text-align: center;
-   display: block;
-   padding: 10px 20px;
-   font-size: 35px;
-   text-shadow: 0 0 1px silver;
-}
-
-#username, #password{
-   border-radius: 25px;
-   padding: 8px;
-}
-
-#podstrona_naglowek{
-   position: absolute; 
-   top: 150px;
-   left: 90px;
-   font-size: 55px;
-   color: rgb(0, 0, 0);
-}
-
-.ogloszenia{
-   position: absolute; 
-   background-color: rgb(254, 240, 205);
-   left: 5%;
-   width: 90%;
-   height: 350px;
-   font-family: CzcionkaDoTekstow;
-   padding-bottom:0;
-}
-
-.ogloszenie1{
-   top: 300px;
-}
-
-.ogloszenie2{
-   top: 700px;
-}
-
-.ogloszenie3{
-   top: 1100px;
-}
-
-.daty_dodania{
-   position: absolute;
-   left: 85%;
-   top: 2px
-}
-
-#tabela{
-   padding-left: 15px;
-   font-family: CzcionkaDoTekstow;
-}
-
-#panel_kontaktu{
-   background-color: white;
-   font-family: CzcionkaDoTekstow;
-   position: relative;
-   top: 250px;
-   left: 20%;
-   width: 55%;
-   height: 750px;
-   text-align: center;
-   display: block;
-   padding: 10px 20px;
-   font-size: 35px;
-   text-shadow: 0 0 1px silver;
-}
-
-#kontakt_email{
-   position: absolute;
-   left: 10%;
-   top: 10%;
-}
-
-#kontakt_imienazwisko{
-   position: absolute;
-   right: 10%;
-   top: 10%
-}
-
-#kontakt_temat{
-   position: absolute;
-   right: 20%;
-   top: 30%;
-}
-
-#kontakt_tresc{
-   position: absolute;
-   right: 10%;
-   top: 50%;
-}
-
-#email, #imienazwisko,#temat{
-   height: 30px;
-   border-radius: 25px;
-   padding: 8px;
-}
-
-#tresc{
-   height: 170px;
-}
-
-.podstopka{
-   position: absolute;
-   height: 80px;
-   width: 100%;
-}
-.podstopka_kontakt{
-   top: 1030px; 
-}
-
-.podstopka_ogloszenia{
-   top: 1460px;
-}
-
-.podstopka_dolacz_do_nas{
-   top: 2880px;
-}
-
-.podstopka_o_nas{
-   height: 2540px;
-}
-
-.podstopka_menu{
-   height: 340px;
-}
-
-#zaloguj{
-   position: absolute;
-   background-color:rgba(255, 154, 71, 0.973);
-   width:80%;
-   height: 50px;
-   left: 10%;
-   top: 200px;
-   text-decoration: none;
-}
-
-#zaloguj:hover{
-   filter: brightness(0.9);
-}
-
-#backend_informacje{
-   position: absolute;
-   font-family: CzcionkaDoTekstow;
-   left: 10%;
-   top: 30%;
-   width: 80%;
-   height: 20%;
-   background-color: rgb(254, 240, 205);
-   padding-left: 5px;
-   border-radius: 25px;
-}
-.backend_przyciski{
-   position: absolute;
-   font-family: CzcionkaDoTekstow;
-   background-color: rgb(254, 240, 205);
-   top: 60%;
-   width: 20%;
-   height: 100px;
-   padding-left: 5px; 
-   border-radius: 25px;
-   text-align: center;
-   text-decoration: none;
-   color: rgb(0, 0, 0)
-}
-.edycja_menu, .kawa{
-  left: 20%;
-}
-
-.edycja_uzytkownika, .jedzenie{
-   left: 50%;
-}
-
-.wyloguj, .napoje{
-   left: 80%;
-}
-
-.edytuj_menu{
-   position: absolute;
-   font-family: CzcionkaDoTekstow;
-   background-color: rgb(254, 240, 205);
-   top: 70%;
-   width: 150px;
-   height: 50px;
-   padding-left: 5px; 
-   border-radius: 25px;
-   text-align: center;
-   text-decoration: none;
-   color: rgb(0, 0, 0)
-}
-

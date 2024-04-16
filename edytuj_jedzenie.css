@@ -164,72 +164,84 @@ body{
      width: 600px;
      height: 250px;
      background-color: rgb(254, 240, 205);
-  }
-  .bagietka_wyborna{
-     position: absolute;
-     top: 820px;
-     right: 5%;
-     width: 600px;
-     height: 450px;
-     background-image: url(images/bagietka_wyborna.png);
-     filter: brightness(1);
-     transition: all 0.4s;
-  }
-  .bagietka_wyborna_opis{
+}
+ .bagietka_wyborna{
     position: absolute;
-    top: 1270px;
+    top: 820px;
     right: 5%;
     width: 600px;
-    height: 250px;
-    background-color: rgb(254, 240, 205);
-  }
- 
-  .szarlotka{
-     position: absolute;
-     top: 1620px;
-     left: 5%;
-     width: 600px;
-     height: 450px;
-     background-image: url(images/szarlotka.jpg);
-     filter: brightness(1);
-     transition: all 0.4s;
-  }
-   
-  .szarlotka_opis{
-     position: absolute;
-     top: 2070px;
-     left: 5%;
-     width: 600px;
-     height: 250px;
-     background-color: rgb(254, 240, 205);
-  }
-  .sernik_baskijski{
-     position: absolute;
-     top: 1620px;
-     right: 5%;
-     width: 600px;
-     height: 450px;
-     background-image: url(images/sernik_baskijski.png);
-     filter: brightness(1);
-     transition: all 0.4s;
-  }
-  .sernik_baskijski_opis{
+    height: 450px;
+    background-image: url(images/bagietka_wyborna.png);
+    filter: brightness(1);
+    transition: all 0.4s;
+ }
+ .bagietka_wyborna_opis{
+   position: absolute;
+   top: 1270px;
+   right: 5%;
+   width: 600px;
+   height: 250px;
+   background-color: rgb(254, 240, 205);
+ }
+
+ .szarlotka{
+    position: absolute;
+    top: 1620px;
+    left: 5%;
+    width: 600px;
+    height: 450px;
+    background-image: url(images/szarlotka.jpg);
+    filter: brightness(1);
+    transition: all 0.4s;
+ }
+  
+ .szarlotka_opis{
     position: absolute;
     top: 2070px;
-    right: 5%;
+    left: 5%;
     width: 600px;
     height: 250px;
     background-color: rgb(254, 240, 205);
-  }
- 
-  .wuzetka:hover, .kanapka_rzemieslnicza:hover, .bagietka_firmowa:hover, .bagietka_wyborna:hover, .szarlotka:hover, .sernik_baskijski:hover{
-    filter: brightness(0.5);
  }
+ .sernik_baskijski{
+    position: absolute;
+    top: 1620px;
+    right: 5%;
+    width: 600px;
+    height: 450px;
+    background-image: url(images/sernik_baskijski.png);
+    filter: brightness(1);
+    transition: all 0.4s;
+ }
+ .sernik_baskijski_opis{
+   position: absolute;
+   top: 2070px;
+   right: 5%;
+   width: 600px;
+   height: 250px;
+   background-color: rgb(254, 240, 205);
+ }
+
+ .wuzetka:hover, .kanapka_rzemieslnicza:hover, .bagietka_firmowa:hover, .bagietka_wyborna:hover, .szarlotka:hover, .sernik_baskijski:hover{
+   filter: brightness(0.5);
+}
  
 
  .informacje{
      padding-left: 15px;
      font-family: CzcionkaDoTekstow;
+}
+
+.edytuj {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     padding: 5px 10px;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+ }
+
+ .edytuj:hover{
+   color: rgb(0, 0, 0);
   }
-  
  

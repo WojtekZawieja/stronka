@@ -36,19 +36,19 @@ body{
 }
 
 .dane_autora{
-   /* position: relative; */
+   position: relative; 
    top: 50%;
 }
-  
+
 .naglowek{
      z-index: 1;
      /*position: absolute;*/
-     background-color: white;
+     background-color: rgb(255, 255, 255);
      width: 100%;
      height: 110px;
      box-shadow: 2px 2px 2px #000000;
      margin-right: 0;
-}
+ }
   
 .naglowek a {
      font-size: 25px;
@@ -65,7 +65,13 @@ body{
 
 .nawigacja{
      position: relative;
-     bottom: 20%;
+     bottom: 10%;
+     overflow: hidden;
+}
+
+.nawigacja a:last-child {
+     float: right;
+     margin-right: 5%;
 }
 
 .logo{
@@ -115,8 +121,8 @@ body{
    margin-left: auto;
    margin-right: auto; 
    width: 800px;
-   height: 2400px;
-   margin-bottom: 30%;
+   height: 2350px;
+   margin-bottom: 10%;
    box-shadow: 2px 2px 2px #000000;
 }
 
@@ -134,7 +140,6 @@ body{
    margin-left: auto;
    margin-right: auto; 
    width: 680px;
-
 }
 
 .informacje{

@@ -1,0 +1,45 @@
+@font-face{
+     font-family: CzcionkaDekoracyjna;
+     src:url(fonts/Playball-Regular.ttf)
+}
+
+@font-face {
+   font-family: CzcionkaDoTekstow;
+   src: url(fonts/Forum-Regular.ttf);
+}
+
+body{
+   position: relative;
+   background-color:rgba(169, 116, 73, 0.973);
+   font-family: CzcionkaDekoracyjna;
+   font-size: 30px;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}  
+
+.panel_statystyki{
+     font-family: CzcionkaDoTekstow;
+     width: 800px;
+     height: 300px;
+     background-color: rgb(254, 240, 205);
+     padding-left: 5px;
+     border-radius: 25px;
+     margin-top: 200px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+}  
+
+.statystyki_naglowek{
+     font-family: CzcionkaDoTekstow;
+     font-size: 35px;
+     text-align: center;
+     padding-top: 20px;
+}
+
+.statystyki_zawartosc{
+     font-family: CzcionkaDoTekstow;
+     font-size: 20px;
+     text-align: center;
+}
